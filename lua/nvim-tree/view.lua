@@ -296,7 +296,7 @@ local function open_window()
 end
 
 function M.open(options)
-	options = options or { focus_tree = true }
+	options = options or { focus_tree = false }
   if not a.nvim_buf_is_valid(M.View.bufnr) then
     HAS_LOADED = false
   end
